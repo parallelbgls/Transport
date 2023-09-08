@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <LangVersion>10.0</LangVersion>
+    <AssemblyName>Transport.Net.Modbus</AssemblyName>
+    <RootNamespace>Transport.Net.Modbus</RootNamespace>
+    <PackageId>Transport.Net.Modbus</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Chris L.(Luo Sheng)</Authors>
+    <Company>Hangzhou Delian Science Technology Co.,Ltd.</Company>
+    <Product>Transport.Net.Modbus</Product>
+    <Description>Transport.Net Modbus Implementation</Description>
+    <Copyright>Copyright 2023 Hangzhou Delian Science Technology Co.,Ltd.</Copyright>
+    <PackageProjectUrl>https://github.com/parallelbgls/Transport.Net/tree/master/Transport.Net/Transport.Net.Modbus</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/parallelbgls/Transport.Net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>hardware communicate protocol modbus Delian</PackageTags>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSymbols>True</IncludeSymbols>
+    <IncludeSource>True</IncludeSource>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\Transport.Net.Modbus.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Transport.Net\Transport.Net.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+</Project>
